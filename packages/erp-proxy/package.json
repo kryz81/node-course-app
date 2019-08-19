@@ -1,0 +1,9 @@
+{
+  "name": "erp-proxy",
+  "version": "1.0.0",
+  "description": "Proxy between API and ERP",
+  "author": "Kryz <k@kryz.dev>",
+  "license": "ISC",
+  "main": "src/server.js",
+  "scripts": {}
+}

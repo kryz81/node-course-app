@@ -1,0 +1,9 @@
+{
+  "name": "monitoring",
+  "version": "1.0.0",
+  "description": "Monitoring App for Dashboard",
+  "author": "Kryz <k@kryz.dev>",
+  "license": "ISC",
+  "main": "src/server.js",
+  "scripts": {}
+}

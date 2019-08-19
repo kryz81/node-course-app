@@ -1,0 +1,18 @@
+{
+  "name": "node-course-app",
+  "version": "1.0.0",
+  "description": "Advanced Node.js Schulung Example Application",
+  "main": "index.js",
+  "repository": "https://github.com/kryz81/node-course-app.git",
+  "author": "Kryz <k@kryz.dev>",
+  "license": "MIT",
+  "engines": {
+    "node": "12.*"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "REST API",
+  "author": "Kryz <k@kryz.dev>",
+  "license": "ISC",
+  "main": "src/server.js",
+  "scripts": {}
+}
