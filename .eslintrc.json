@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {},
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "error",
+    "no-template-curly-in-string": "error"
+  },
+  "plugins": [
+    "prettier",
+    "node",
+    "security"
+  ]
+}

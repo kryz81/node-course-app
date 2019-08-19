@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  queue:
+    container_name: queue
+    image: redis
+    ports:
+      - 6379:6379
+  db:
+    container_name: db
+    image: mongo
+    ports:
+      - 27017:27017

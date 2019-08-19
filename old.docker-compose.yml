@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  queue:
+    container_name: queue
+    image: redis
+  db:
+    container_name: db
+    image: mongodb

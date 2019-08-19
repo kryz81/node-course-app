@@ -1,0 +1,11 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "ext": "js,json",
+  "watch": ["src/**"],
+  "exec": "node --inspect=0.0.0.0:9229 -r dotenv/config src/server",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ]
+}

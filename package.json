@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/kryz81/node-course-app.git",
   "author": "Kryz <k@kryz.dev>",
+  "private": true,
   "license": "MIT",
   "engines": {
     "node": "12.*"
@@ -12,6 +13,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "lint": "lerna run lint",
+    "prettier": "lerna run prettier",
+    "fix": "lerna run fix"
+  },
   "devDependencies": {
     "lerna": "^3.16.4"
   }
