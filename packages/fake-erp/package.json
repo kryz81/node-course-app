@@ -1,0 +1,9 @@
+{
+  "name": "fake-erp",
+  "version": "1.0.0",
+  "description": "Fake ERP system",
+  "author": "Kryz <k@kryz.dev>",
+  "license": "ISC",
+  "main": "src/server.js",
+  "scripts": {}
+}
