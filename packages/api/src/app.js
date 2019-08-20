@@ -1,9 +1,8 @@
 const express = require('express');
+const bootstrap = require('./bootstrap');
 
-const app = express();
+let app = express();
 
-app.get('/', req => {
-  req.json({ msg: 'API' });
-});
+bootstrap(app);
 
 module.exports = app;

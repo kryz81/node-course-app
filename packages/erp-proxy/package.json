@@ -1,5 +1,5 @@
 {
-  "name": "erp-proxy",
+  "name": "@course/erp-proxy",
   "version": "1.0.0",
   "description": "Proxy between API and ERP",
   "author": "Kryz <k@kryz.dev>",

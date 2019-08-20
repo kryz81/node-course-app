@@ -1,5 +1,5 @@
 {
-  "name": "fake-erp",
+  "name": "@course/fake-erp",
   "version": "1.0.0",
   "description": "Fake ERP system",
   "author": "Kryz <k@kryz.dev>",
