@@ -5,6 +5,9 @@
   "author": "Kryz <k@kryz.dev>",
   "license": "ISC",
   "main": "src/queue.js",
+  "engines": {
+    "node": "12.*"
+  },
   "scripts": {
     "lint": "eslint src",
     "prettier": "prettier -l src/**/*.{js,json}",

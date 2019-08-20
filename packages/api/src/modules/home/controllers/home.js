@@ -5,6 +5,6 @@ exports.index = req => {
 };
 
 exports.testQueue = (req, res) => {
-  publish('test', req.body);
+  publish('time-reporting', req.body);
   res.json({ msg: 'Triggered', payload: req.body });
 };

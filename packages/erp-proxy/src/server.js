@@ -1,5 +1,5 @@
 const { createServer } = require('http');
-const { APP_PORT } = require('./env');
+const { APP_PORT } = require('./config/env');
 const app = require('./app');
 
 // eslint-disable-next-line no-console
