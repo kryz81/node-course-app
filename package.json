@@ -16,7 +16,8 @@
   "scripts": {
     "lint": "lerna run lint",
     "prettier": "lerna run prettier",
-    "fix": "lerna run fix"
+    "fix": "lerna run fix",
+    "audit": "yarn audit"
   },
   "devDependencies": {
     "lerna": "^3.16.4"

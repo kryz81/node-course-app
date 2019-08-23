@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "@course/queue": "1.0.0",
+    "@hapi/joi": "15.1.1",
     "koa": "2.8.1",
     "koa-router": "7.4.0",
-    "node-fetch": "2.6.0"
+    "node-fetch": "2.6.0",
+    "winston": "3.2.1"
   },
   "devDependencies": {
     "dotenv": "8.1.0",

@@ -1,3 +1,4 @@
 module.exports = {
-  APP_PORT: process.env.APP_PORT,
+  NODE_ENV: String(process.env.NODE_ENV),
+  APP_PORT: Number(process.env.APP_PORT),
 };
