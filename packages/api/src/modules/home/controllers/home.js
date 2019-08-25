@@ -1,10 +1,22 @@
 const { publish } = require('@course/queue');
 
-exports.index = req => {
-  req.json({ msg: 'API' });
+/**
+ * Home route
+ *
+ * @param req {object}
+ * @param res {object}
+ */
+exports.index = (req, res) => {
+  res.json({ msg: 'API' });
 };
 
+/**
+ * Test queue
+ *
+ * @param req {object}
+ * @param res {object}
+ */
 exports.testQueue = (req, res) => {
-  publish('time-reporting', req.body);
+  publish('test', req.body);
   res.json({ msg: 'Triggered', payload: req.body });
 };

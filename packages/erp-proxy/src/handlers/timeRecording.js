@@ -1,16 +1,24 @@
 const { CHANNEL_TIME_REPORTING } = require('../config/queue');
 const notifyERP = require('../services/notifyERP');
-// const validateTimeReporting = require('../validators/validateTimeReporting');
+const validateTimeReporting = require('../validators/validateTimeReporting');
 
-exports.notifyERP = async (channel, payload) => {
+/**
+ * Send data to ERP
+ *
+ * @param channel {string}
+ * @param payload {object}
+ */
+exports.notifyERP = (channel, payload) => {
   if (channel !== CHANNEL_TIME_REPORTING) {
     return;
   }
 
-  try {
-    // validateTimeReporting(payload);
-    await notifyERP(payload);
-  } catch (err) {
-    console.log(`${err.message}`);
+  // validate data
+  const isValid = validateTimeReporting(payload);
+  if (!isValid) {
+    // @todo handle error
   }
+
+  // send to ERP
+  return notifyERP(payload);
 };

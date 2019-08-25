@@ -1,5 +1,5 @@
 import App from './app/App';
 
-const app = new App({
+new App({
   target: document.getElementById('root'),
 });

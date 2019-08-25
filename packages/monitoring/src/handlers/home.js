@@ -1,4 +1,5 @@
 const { CHANNEL_TEST } = require('../config/queue');
+const { emit } = require('../services/ws');
 
 /**
  * Home route
@@ -6,7 +7,7 @@ const { CHANNEL_TEST } = require('../config/queue');
  * @param response {object}
  */
 exports.index = ({ response }) => {
-  response.body = { msg: 'ERP Proxy' };
+  response.body = { msg: 'Monitoring App' };
 };
 
 /**
@@ -23,4 +24,6 @@ exports.test = (channel, payload) => {
 
   // eslint-disable-next-line no-console
   console.log(payload);
+
+  emit('test');
 };

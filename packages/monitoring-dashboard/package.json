@@ -8,11 +8,11 @@
     "dev": "webpack-dev-server",
     "build": "webpack",
     "start": "serve build",
-    "lint": "eslint src",
     "prettier": "prettier -l src/**/*.{js,json}",
     "fix": "prettier --write src/**/*.{js,json}"
   },
   "dependencies": {
+    "socket.io-client": "2.2.0",
     "svelte": "3.6.7"
   },
   "devDependencies": {

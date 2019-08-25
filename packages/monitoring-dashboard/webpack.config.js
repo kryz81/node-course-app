@@ -20,6 +20,13 @@ module.exports = {
   devServer: {
     contentBase: join(__dirname, 'build'),
     port: 3000,
+    proxy: {
+      '/socket.io': {
+        target: 'http://localhost:3020',
+        ws: true,
+        changeOrigin: true,
+      },
+    },
   },
   module: {
     rules: [

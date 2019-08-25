@@ -23,5 +23,5 @@ module.exports = app => {
 
   // register queue handlers
   queue.subscribe(CHANNEL_TEST, homeHandler.test);
-  queue.subscribe(CHANNEL_TIME_REPORTING, timeRecordingHandler.notifyERP);
+  queue.subscribe(CHANNEL_TIME_REPORTING, timeRecordingHandler.notify);
 };
